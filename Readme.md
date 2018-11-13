@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Артём Волков](https://up.htmlacademy.ru/htmlcss/23/user/693011).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
