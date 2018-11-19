@@ -44,10 +44,10 @@
               <li><a href="#">По типу</a></li>
               <li><a href="#">По рейтингу</a></li>
             </ul>
-            <ul class="sorting-head-types-arrows">
-              <li><a class="sorting-head-types-arrows-down"><img src="http://placehold.it/11x10" width="11" height="10" alt="Сортировка по убыванию"></a></li>
-              <li><a class="sorting-head-types-arrows-up"><img src="http://placehold.it/11x10" width="11" height="10" alt="Сортировка по возрастанию"></a></li>
-            </ul>
+            <div class="sorting-head-types-arrows">
+              <a href="#"><span class="visually-hidden">Стрелка вверх</span></a>
+              <a href="#"><span class="visually-hidden">Стрелка вниз</span></a>
+            </div>
           </div>
         </div>
         <section class="catalog">
@@ -62,12 +62,12 @@
               <span class="catalog-item-cost">От 4000 Р.</span>
               <a class="button button-details" href="#">Подробнее</a>
               <a class="button button-order" href="#">Забронировать</a>
-              <ul class="catalog-item-rating">
-                <li><img src="http://placehold.it/18x17" width="18" height="17" alt="Рейтинг отеля"></li>
-                <li><img src="http://placehold.it/18x17" width="18" height="17" alt="Рейтинг отеля"></li>
-                <li><img src="http://placehold.it/18x17" width="18" height="17" alt="Рейтинг отеля"></li>
-                <li><img src="http://placehold.it/18x17" width="18" height="17" alt="Рейтинг отеля"></li>
-              </ul>
+              <div class="catalog-item-rating">
+                <span class="catalog-item-rating-star"></span>
+                <span class="catalog-item-rating-star"></span>
+                <span class="catalog-item-rating-star"></span>
+                <span class="catalog-item-rating-star"></span>
+              </div>
               <div class="catalog-item-rating-number">
                 <span>Рейтинг: 8,5</span>
               </div>
@@ -81,11 +81,11 @@
               <span class="catalog-item-cost">От 3000 Р.</span>
               <a class="button button-details" href="#">Подробнее</a>
               <a class="button button-order" href="#">Забронировать</a>
-              <ul class="catalog-item-rating">
-                <li><img src="http://placehold.it/18x17" width="18" height="17" alt="Рейтинг отеля"></li>
-                <li><img src="http://placehold.it/18x17" width="18" height="17" alt="Рейтинг отеля"></li>
-                <li><img src="http://placehold.it/18x17" width="18" height="17" alt="Рейтинг отеля"></li>
-              </ul>
+              <div class="catalog-item-rating">
+                <span class="catalog-item-rating-star"></span>
+                <span class="catalog-item-rating-star"></span>
+                <span class="catalog-item-rating-star"></span>
+              </div>
               <div class="catalog-item-rating-number">
                 <span>Рейтинг: 8,9</span>
               </div>
@@ -99,10 +99,10 @@
               <span class="catalog-item-cost">От 2000 Р.</span>
               <a class="button button-details" href="#">Подробнее</a>
               <a class="button button-order" href="#">Забронировать</a>
-              <ul class="catalog-item-rating">
-                <li><img src="http://placehold.it/18x17" width="18" height="17" alt="Рейтинг отеля"></li>
-                <li><img src="http://placehold.it/18x17" width="18" height="17" alt="Рейтинг отеля"></li>
-              </ul>
+              <div class="catalog-item-rating">
+                <span class="catalog-item-rating-star"></span>
+                <span class="catalog-item-rating-star"></span>
+              </div>
               <div class="catalog-item-rating-number">
                 <span>Рейтинг: 9,2</span>
               </div>
@@ -115,15 +115,9 @@
       <div class="main-footer-contacts">
         <span class="main-footer-contacts-hashtag">#visitSEDONA</span>
         <ul class="main-footer-contacts-social">
-          <li>
-            <img src="http://placehold.it/17x15" width="17" height="15" alt="Кнопка Твиттер">
-          </li>
-          <li>
-            <img src="http://placehold.it/12x22" width="12" height="22" alt="Кнопка Фейсбук">
-          </li>
-          <li>
-            <img src="http://placehold.it/20x16" width="20" height="16" alt="Кнопка Ютьюб">
-          </li>
+          <li><a class="main-footer-twitter-button" href="#">Twitter</a></li>
+          <li><a class="main-footer-facebook-button" href="#">Facebook</a></li>
+          <li><a class="main-footer-youtube-button" href="#">Youtube</a></li>
         </ul>
         <div class="main-footer-contacts-logo">
           <span class="main-footer-contacts-logo-desc">Website by</span>
