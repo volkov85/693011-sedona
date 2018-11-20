@@ -11,7 +11,7 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a class="main-header-menu-active" href="#">Гостиницы</a></li>
+          <li class="main-header-menu-active"><a href="#">Гостиницы</a></li>
         </ul>
         <a class="main-header-logo" href="index.html">
           <img src="http://placehold.it/140x72" width="140" height="72" alt="Логотип города Седона">
@@ -56,10 +56,12 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Стоимость в сутки (Р):</legend>
-            <button class="button show-button" type="submit">Показать</button>
-          </fieldset>
+          <div class="search-filter-cost">
+            <fieldset>
+              <legend>Стоимость в сутки (Р):</legend>
+            </fieldset>
+            <button class="button show-button" type="submit">Показать</button>            
+          </div>
         </form>
       </div>
       <div class="sorting">
@@ -67,14 +69,14 @@
           <h3 class="sorting-head-title">Найдено: 3</h3>
           <div class="sorting-head-types">
             <span class="sorting-head-types-title">Сортировка:</span>
-            <ul class="sorting-head-types-names">
-              <li><a class="sorting-head-types-active" href="#">По цене</a></li>
-              <li><a href="#">По типу</a></li>
-              <li><a href="#">По рейтингу</a></li>
-            </ul>
+            <div class="sorting-head-types-names">
+              <a class="sorting-head-types-active" href="#">По цене</a>
+              <a href="#">По типу</a>
+              <a href="#">По рейтингу</a>
+            </div>
             <div class="sorting-head-types-arrows">
-              <a href="#"><span class="visually-hidden">Стрелка вверх</span></a>
-              <a href="#"><span class="visually-hidden">Стрелка вниз</span></a>
+              <a href="#" class="sorting-head-types-arrows-up"></a>
+              <a href="#" class="sorting-head-types-arrows-down"></a>
             </div>
           </div>
         </div>
@@ -83,57 +85,39 @@
           <ul class="catalog-list">
             <li class="catalog-list-item">
               <a class="catalog-item-image" href="#">
-                  <img src="http://placehold.it/135x90" width="135" height="90" alt="Фото гостиницы">
+                <img src="http://placehold.it/135x90" width="135" height="90" alt="Фото гостиницы">
               </a>
               <h3 class="catalog-item-title">Amara Resort & Spa</h3>
               <span class="catalog-item-type">Гостиница</span>
               <span class="catalog-item-cost">От 4000 Р.</span>
               <a class="button button-details" href="#">Подробнее</a>
               <a class="button button-order" href="#">Забронировать</a>
-              <div class="catalog-item-rating">
-                <span class="catalog-item-rating-star"></span>
-                <span class="catalog-item-rating-star"></span>
-                <span class="catalog-item-rating-star"></span>
-                <span class="catalog-item-rating-star"></span>
-              </div>
-              <div class="catalog-item-rating-number">
-                <span>Рейтинг: 8,5</span>
-              </div>
+              <div class="catalog-item-rating-star-four"></div>
+              <div class="catalog-item-rating-number">Рейтинг: 8,5</div>
             </li>
             <li class="catalog-list-item">
               <a class="catalog-item-image" href="#">
-                  <img src="http://placehold.it/135x90" width="135" height="90" alt="Фото гостиницы">
+                <img src="http://placehold.it/135x90" width="135" height="90" alt="Фото гостиницы">
               </a>
               <h3 class="catalog-item-title">Desert Quail Inn</h3>
               <span class="catalog-item-type">Мотель</span>
               <span class="catalog-item-cost">От 3000 Р.</span>
               <a class="button button-details" href="#">Подробнее</a>
               <a class="button button-order" href="#">Забронировать</a>
-              <div class="catalog-item-rating">
-                <span class="catalog-item-rating-star"></span>
-                <span class="catalog-item-rating-star"></span>
-                <span class="catalog-item-rating-star"></span>
-              </div>
-              <div class="catalog-item-rating-number">
-                <span>Рейтинг: 8,9</span>
-              </div>
+              <div class="catalog-item-rating-star-three"></div>
+              <div class="catalog-item-rating-number">Рейтинг: 8,9</div>
             </li>
             <li class="catalog-list-item">
               <a class="catalog-item-image" href="#">
-                  <img src="http://placehold.it/135x90" width="135" height="90" alt="Фото гостиницы">
+                <img src="http://placehold.it/135x90" width="135" height="90" alt="Фото гостиницы">
               </a>
               <h3 class="catalog-item-title">Villas at Poco Diablo</h3>
               <span class="catalog-item-type">Апартаменты</span>
               <span class="catalog-item-cost">От 2000 Р.</span>
               <a class="button button-details" href="#">Подробнее</a>
               <a class="button button-order" href="#">Забронировать</a>
-              <div class="catalog-item-rating">
-                <span class="catalog-item-rating-star"></span>
-                <span class="catalog-item-rating-star"></span>
-              </div>
-              <div class="catalog-item-rating-number">
-                <span>Рейтинг: 9,2</span>
-              </div>
+              <div class="catalog-item-rating-star-two"></div>
+              <div class="catalog-item-rating-number">Рейтинг: 9,2</div>
             </li>
           </ul>
         </section>
@@ -143,13 +127,13 @@
       <div class="main-footer-contacts">
         <span class="main-footer-contacts-hashtag">#visitSEDONA</span>
         <ul class="main-footer-contacts-social">
-          <li><a class="main-footer-twitter-button" href="#">Twitter</a></li>
-          <li><a class="main-footer-facebook-button" href="#">Facebook</a></li>
-          <li><a class="main-footer-youtube-button" href="#">Youtube</a></li>
+          <li><a class="main-footer-social-button twitter" href="#">Twitter</a></li>
+          <li><a class="main-footer-social-button facebook" href="#">Facebook</a></li>
+          <li><a class="main-footer-social-button youtube" href="#">Youtube</a></li>
         </ul>
         <div class="main-footer-contacts-logo">
           <span class="main-footer-contacts-logo-desc">Website by</span>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
             <img src="http://placehold.it/115x41" width="115" height="41" alt="Логотип">
           </a>
         </div>
