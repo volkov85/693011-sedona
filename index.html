@@ -81,9 +81,9 @@
           <input type="text" id="departure-date" name="departure-date" value="4 июля 2017" placeholder="ДД месяц ГГГГ">
           <img src="img/calendar.svg" width="21" height="22" alt="Календарь">
           <label for="adults-quantity">взрослые:</label>
-          <input type="text" id="adults-quantity" name="adults-quantity" value="2" placeholder="0">
+          <input type="number" id="adults-quantity" name="adults-quantity" value="2" placeholder="0" min="0" max="99" step="1">
           <label for="children-quantity">дети:</label>
-          <input type="text" id="children-quantity" name="children-quantity" value="0" placeholder="0">
+          <input type="number" id="children-quantity" name="children-quantity" value="0" placeholder="0" min="0" max="99" step="1">
           <button class="button search-button" type="submit">Найти</button>
         </form>
       </section>
