@@ -8,3 +8,63 @@ body {
   text-transform: uppercase;
   background-color: #f2f2f2;
 }
+a {
+  text-decoration: none;
+}
+.header-nav {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
+.header-menu,
+.contacts-social,
+.search-sructure,
+.catalog-list {
+  list-style: none;
+}
+.header-menu a{
+  color: #ffffff;
+  font-weight: 700;
+}
+.header-menu a:hover{
+  color: #81b3d2;
+}
+.header-menu a:focus{
+  opacity: 0.3;
+}
+.advantages,
+.searching {
+  text-align: center;
+}
+.first-screen {
+  background-color: #ffffff;
+  background-image: url("../img/background-1.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.advantages-title {
+  font-size: 21px;
+  line-height: 26px;
+}
+.advantages-item {
+  color: #ffffff;
+  background-color: #81b3d2;
+  display: flex;
+}
+.first-advantage .advantage-picture {
+  background-image: url("../img/bg-adv-1.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+.second-advantage .advantage-picture {
+  background-image: url("../img/bg-adv-2.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+.advantage-common {
+  width: 400px;
+}
+.advantage-picture {
+  width: 800px;
+}
