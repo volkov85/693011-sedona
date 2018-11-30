@@ -11,6 +11,22 @@ body {
 a {
   text-decoration: none;
 }
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.text-hiding {
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
 .header-nav {
   font-size: 14px;
   line-height: 26px;
@@ -30,7 +46,7 @@ a {
 .header-menu a:hover{
   color: #81b3d2;
 }
-.header-menu a:focus{
+.header-menu a:active{
   opacity: 0.3;
 }
 .advantages,
@@ -92,13 +108,13 @@ a {
 .searching .show-form-button:hover {
   background-color: #604e43;
 }
-.searching .show-form-button:focus {
+.searching .show-form-button:active {
   background-color: #503e33;
 }
 .button:hover {
   background-color: #669ec0;
 }
-.button:focus {
+.button:active {
   background-color: #5496bd;
 }
 .button-order {
@@ -107,7 +123,7 @@ a {
 .button-order:hover {
   background-color: #604e43;
 }
-.button-order:focus {
+.button-order:active {
   background-color: #503e33;
 }
 .catalog-list {
@@ -120,7 +136,7 @@ a {
 .catalog-title:hover {
   color: #81b3d2;
 }
-.catalog-title:focus {
+.catalog-title:active {
   color: #b2b2b2;
 }
 .rating-number {
@@ -136,25 +152,21 @@ a {
 }
 .social-button {
   background-color: #81b3d2;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .social-button:hover {
   background-color: #669ec0;
 }
-.social-button:focus {
+.social-button:active {
   background-color: #5496bd;
 }
 .twitter {
   background-image: url("../img/twitter.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
 }
 .facebook {
   background-image: url("../img/fb-icon.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
 }
 .youtube {
   background-image: url("../img/youtube.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
 }
