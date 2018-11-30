@@ -55,10 +55,7 @@ a {
   background-color: #ffffff;
 }
 .first-screen {
-  background-color: #ffffff;
-  background-image: url("../img/background-1.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
+  background: #ffffff url("../img/background-1.jpg") no-repeat top center;
 }
 .advantages-title {
   font-size: 21px;
@@ -70,14 +67,10 @@ a {
   display: flex;
 }
 .first-advantage .advantage-picture {
-  background-image: url("../img/bg-adv-1.jpg");
-  background-position: top right;
-  background-repeat: no-repeat;
+  background: url("../img/bg-adv-1.jpg") no-repeat top right;
 }
 .second-advantage .advantage-picture {
-  background-image: url("../img/bg-adv-2.jpg");
-  background-position: top left;
-  background-repeat: no-repeat;
+  background: url("../img/bg-adv-2.jpg") no-repeat top left;
 }
 .advantage-common {
   width: 400px;
@@ -151,9 +144,7 @@ a {
   font-weight: 700;
 }
 .social-button {
-  background-color: #81b3d2;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background: #81b3d2 no-repeat center center;
 }
 .social-button:hover {
   background-color: #669ec0;
