@@ -94,6 +94,14 @@ a {
 .searching-title {
   font-size: 30px;
   line-height: 24px;
+  padding-top: 57px;
+  margin: 0px;
+}
+.searching-description {
+  width: 440px;
+  margin: 0 auto;
+  padding-top: 37px;
+  padding-bottom: 52px;
 }
 .last-features {
   background-color: #eeeeee;
@@ -110,6 +118,11 @@ a {
 }
 .show-form-button {
   background-color: #766357;
+  width: 568px;
+  font-size: 21px;
+  line-height: 26px;
+  padding-top: 31px;
+  padding-bottom: 29px;
 }
 .searching .show-form-button:hover {
   background-color: #604e43;
@@ -150,7 +163,15 @@ a {
   background-color: #f2f2f2;
 }
 .footer {
+  width: 1200px;
   background-color: #ffffff;
+  margin: 0 auto;
+}
+.footer-map {
+
+}
+.footer-contacts {
+
 }
 .contacts-hashtag {
   font-size: 21px;
