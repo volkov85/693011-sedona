@@ -11,15 +11,23 @@ body {
 a {
   text-decoration: none;
 }
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .text-hiding {
   border: 0;
@@ -106,12 +114,15 @@ a {
   padding-bottom: 79px;
 }
 .advantages-title {
-  width: 170px;
+  width: 400px;
   font-size: 21px;
   line-height: 26px;
   margin: 0 auto;
   padding-top: 61px;
   padding-bottom: 28px;
+}
+.advantage-common .advantages-title {
+  width: 170px;
 }
 .introduction {
   margin: 0;
