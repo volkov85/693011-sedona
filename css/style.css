@@ -498,11 +498,19 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 4px 17px 5px 17px;
   margin-right: 2px;
 }
+.button-details:hover {
+  background-color: #669ec0;
+}
+.button-details:active {
+  background-color: #5496bd;
+  color: #87b6d1;
+}
 .button-order:hover {
   background-color: #604e43;
 }
 .button-order:active {
   background-color: #503e33;
+  color: #847870;
 }
 .catalog-list {
   background-color: #fefefe;
