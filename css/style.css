@@ -492,10 +492,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .button-order {
   background-color: #766357;
-  padding: 8px 17px 7px 17px;
+  padding: 4px 17px 5px 17px;
 }
 .button-details {
-  padding: 8px 17px 7px 17px;
+  padding: 4px 17px 5px 17px;
+  margin-right: 2px;
 }
 .button-order:hover {
   background-color: #604e43;
@@ -520,18 +521,34 @@ input[type=number]::-webkit-outer-spin-button {
 .catalog-left-wrapper {
   display: flex;
   padding: 0;
-  margin: 0;  
+  margin: 0;
+  margin-left: 72px;
+  margin-top: 30px;
+  margin-bottom: 24px;
 }
 .catalog-title {
   font-size: 21px;
   font-weight: 700;
   color: #000000;
+  margin-bottom: -7px;
+  margin-top: -3px;
+}
+.type-cost-column {
+  display: flex;
+}
+.catalog-type {
+  width: 115px;
 }
 .naming-column {
   display: flex;
   padding: 0;
   margin: 0;  
   flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+.details-button-column {
+  box-sizing: border-box;
 }
 .rating-column {
   padding-right: 73px;
@@ -547,7 +564,6 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #f2f2f2;
 }
 .catalog-image {
-  padding-left: 72px;
   margin-right: 30px;
 }
 .footer-map {
