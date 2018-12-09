@@ -551,7 +551,11 @@ input[type=number]::-webkit-outer-spin-button {
   box-sizing: border-box;
 }
 .rating-column {
-  padding-right: 73px;
+  margin-right: 73px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 110px;
 }
 .catalog-title:hover {
   color: #81b3d2;
@@ -559,9 +563,25 @@ input[type=number]::-webkit-outer-spin-button {
 .catalog-title:active {
   color: #b2b2b2;
 }
+.rating-star {
+  align-self: flex-end;
+  width: 89px;
+  background: url("../img/star.svg") space center right;
+  margin-top: 5px;
+}
+.rating-star-three {
+  width: 63px;
+}
+.rating-star-two {
+  width: 40px;
+}
 .rating-number {
   color: #666666;
   background-color: #f2f2f2;
+  margin-top: 47px;
+  margin-bottom: 6px;
+  text-align: center;
+  padding: 4px 10px 3px 13px;
 }
 .catalog-image {
   margin-right: 30px;
