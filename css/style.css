@@ -387,9 +387,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .quantity-wrapper input {
   box-sizing: border-box;
-  width: 114px;
-  padding: 11px 38px 11px 38px;
-  margin-left: 36px;
+  width: 38px;
+  padding: 11px 0px 11px 0px;
+  margin-left: 75px;
   border: 0;
   background-color: #f2f2f2;
   font-weight: 700;
@@ -401,93 +401,63 @@ input[type=number]::-webkit-outer-spin-button {
 .quantity-wrapper input:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
-  padding: 9px 34px 9px 34px;
+  padding: 9px 0px 9px 0px;
 }
 .quantity-a-wrapper{
   position: relative;
 }
-.quantity-a-wrapper::after {
-  content: "";
-  position: absolute;
-  left: 187px;
-  top: 0;
-  width: 38px;
-  height: 38px;
-  background-image: url("../img/plus_grey.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 2;
-  cursor: pointer;
-}
-.quantity-a-wrapper:hover::after {
-  background-image: url("../img/plus_black.png");
-}
-.quantity-a-wrapper:active::after {
-  background-image: url("../img/plus_blue.png");
-}
-.quantity-a-wrapper::before {
-  content: "";
+.minus-button {
   position: absolute;
   left: 112px;
   top: 0;
+  background-color: #f2f2f2;
   width: 38px;
   height: 38px;
+  padding: 0;
   background-image: url("../img/minus_grey.png");
   background-repeat: no-repeat;
   background-position: center;
   z-index: 2;
-  cursor: pointer;
 }
-.quantity-a-wrapper:hover::before {
+.quantity-c-wrapper .minus-button {
+  left: 64px;
+}
+.minus-button:hover {
+  background-color: #f2f2f2;
   background-image: url("../img/minus_black.png");
 }
-.quantity-a-wrapper:active::before {
+.minus-button:active {
   background-image: url("../img/minus_blue.png");
 }
-.quantity-c-wrapper input {
-  margin-left: 23px;
-}
-
-.quantity-c-wrapper{
-  position: relative;
-}
-.quantity-c-wrapper::after {
-  content: "";
+.plus-button {
   position: absolute;
-  left: 141px;
+  left: 188px;
   top: 0;
+  background-color: #f2f2f2;
   width: 38px;
   height: 38px;
+  padding: 0;
   background-image: url("../img/plus_grey.png");
   background-repeat: no-repeat;
   background-position: center;
   z-index: 2;
-  cursor: pointer;
 }
-.quantity-c-wrapper:hover::after {
+.quantity-c-wrapper .plus-button {
+  left: 140px;
+}
+.plus-button:hover {
+  background-color: #f2f2f2;
   background-image: url("../img/plus_black.png");
 }
-.quantity-c-wrapper:active::after {
+.plus-button:active {
   background-image: url("../img/plus_blue.png");
 }
-.quantity-c-wrapper::before {
-  content: "";
-  position: absolute;
-  left: 66px;
-  top: 0;
-  width: 38px;
-  height: 38px;
-  background-image: url("../img/minus_grey.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 2;
-  cursor: pointer;
+.quantity-c-wrapper input {
+  margin-left: 61px;
+  margin-right: 37px;
 }
-.quantity-c-wrapper:hover::before {
-  background-image: url("../img/minus_black.png");
-}
-.quantity-c-wrapper:active::before {
-  background-image: url("../img/minus_blue.png");
+.quantity-c-wrapper{
+  position: relative;
 }
 .search-filter {
   width: 1200px;
