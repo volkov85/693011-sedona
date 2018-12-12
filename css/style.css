@@ -279,7 +279,9 @@ input[type="radio"].visually-hidden {
   background-color: #5496bd;
 }
 .search-form {
+  box-sizing: border-box;
   width: 568px;
+  padding: 55px;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -288,7 +290,6 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  padding: 0;
   margin: 0;
   align-items: center;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
@@ -303,7 +304,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-top: 17px;
   padding-bottom: 20px;
-  margin-bottom: 55px;
   margin-top: 54px;
 }
 .search-form .search-button:active {
@@ -311,8 +311,6 @@ input[type="radio"].visually-hidden {
   background-color: #5496bd;
 }
 .arrival-wrapper {
-  width: 458px;
-  margin-top: 55px;
   margin-bottom: 29px;
 }
 .arrival-label {
@@ -320,13 +318,12 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 .departure-wrapper {
-  width: 458px;
   margin-bottom: 30px;
 }
 .arrival-wrapper input {
   box-sizing: border-box;
   width: 346px;
-  padding: 11px 200px 11px 14px;
+  padding: 11px 50px 11px 14px;
   margin-left: 16px;
   border: 0;
   background-color: #f2f2f2;
@@ -340,7 +337,7 @@ input[type="radio"].visually-hidden {
 .arrival-wrapper input:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
-  padding: 9px 196px 9px 12px;
+  padding: 9px 50px 9px 12px;
 }
 .arrival-wrapper svg {
   position: absolute;
@@ -357,7 +354,7 @@ input[type="radio"].visually-hidden {
 .departure-wrapper input {
   box-sizing: border-box;
   width: 346px;
-  padding: 11px 200px 11px 14px;
+  padding: 11px 50px 11px 14px;
   margin-left: 14px;
   border: 0;
   background-color: #f2f2f2;
@@ -371,7 +368,7 @@ input[type="radio"].visually-hidden {
 .departure-wrapper input:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
-  padding: 9px 196px 9px 12px;
+  padding: 9px 50px 9px 12px;
 }
 .departure-wrapper svg {
   position: absolute;
@@ -390,22 +387,15 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
 }
-.quantity-wrapper input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin: 0;
-}
 .quantity-wrapper input {
   box-sizing: border-box;
   width: 38px;
   padding: 11px 0px 11px 0px;
-  margin-left: 75px;
   border: 0;
   background-color: #f2f2f2;
   font-weight: 700;
   text-align: center;
+  height: 38px;
 }
 .quantity-wrapper input:hover {
   background-color: #ebebeb;
@@ -415,13 +405,19 @@ input[type=number]::-webkit-outer-spin-button {
   border: 2px solid #e5e5e5;
   padding: 9px 0px 9px 0px;
 }
-.quantity-a-wrapper{
-  position: relative;
+.quantity-a-wrapper {
+  display: flex;
+  align-items: center;
+}
+.quantity-a-wrapper .arrival-label {
+  width: 112px;
+  text-align: left;
+}
+.quantity-c-wrapper .arrival-label {
+  width: 65px;
+  text-align: left;
 }
 .minus-button {
-  position: absolute;
-  left: 113px;
-  top: 0;
   background-color: #f2f2f2;
   width: 38px;
   height: 38px;
@@ -442,9 +438,6 @@ input[type=number]::-webkit-outer-spin-button {
   background-image: url("../img/minus_blue.png");
 }
 .plus-button {
-  position: absolute;
-  left: 188px;
-  top: 0;
   background-color: #f2f2f2;
   width: 38px;
   height: 38px;
@@ -464,12 +457,9 @@ input[type=number]::-webkit-outer-spin-button {
 .plus-button:active {
   background-image: url("../img/plus_blue.png");
 }
-.quantity-c-wrapper input {
-  margin-left: 60px;
-  margin-right: 36px;
-}
 .quantity-c-wrapper{
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 .search-filter {
   width: 1200px;
