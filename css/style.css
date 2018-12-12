@@ -651,10 +651,16 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 700;
 }
 .social-button {
-  background: #81b3d2 no-repeat center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 46px;
   height: 48px;
+  background-color: #81b3d2;
   margin-right: 6px;
+}
+.social-button svg {
+  fill: #ffffff;
 }
 .social-button:hover {
   background-color: #669ec0;
@@ -662,12 +668,6 @@ input[type=number]::-webkit-outer-spin-button {
 .social-button:active {
   background-color: #5496bd;
 }
-.twitter {
-  background-image: url("../img/twitter.svg");
-}
-.facebook {
-  background-image: url("../img/fb-icon.svg");
-}
-.youtube {
-  background-image: url("../img/youtube.svg");
+.social-button svg:active {
+  fill: #87b6d1;
 }
