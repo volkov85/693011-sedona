@@ -315,10 +315,6 @@ input[type="radio"].visually-hidden {
 }
 .arrival-label {
   font-weight: 700;
-  position: relative;
-}
-.departure-wrapper {
-  margin-bottom: 30px;
 }
 .arrival-wrapper input {
   box-sizing: border-box;
@@ -351,36 +347,12 @@ input[type="radio"].visually-hidden {
 .arrival-wrapper svg:active {
   fill: #81b3d2;
 }
-.departure-wrapper input {
-  box-sizing: border-box;
-  width: 346px;
-  padding: 11px 50px 11px 14px;
-  margin-left: 14px;
-  border: 0;
-  background-color: #f2f2f2;
-  font-weight: 700;
-  text-transform: uppercase;
+.arrival-wrapper:nth-child(2) {
   position: relative;
 }
-.departure-wrapper input:hover {
-  background-color: #ebebeb;
-}
-.departure-wrapper input:focus {
-  background-color: #ffffff;
-  border: 2px solid #e5e5e5;
-  padding: 9px 50px 9px 12px;
-}
-.departure-wrapper svg {
-  position: absolute;
-  top: 130px;
-  left: 483px;
-  fill: #a9a9a9;
-}
-.departure-wrapper svg:hover {
-  fill: #000000;
-}
-.departure-wrapper svg:active {
-  fill: #81b3d2;
+.arrival-wrapper:nth-child(2) svg {
+  top: 8px;
+  left: 428px;
 }
 .quantity-wrapper {
   width: 458px;
