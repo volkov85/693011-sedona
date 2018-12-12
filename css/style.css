@@ -152,7 +152,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 24px;
   position: relative;
 }
-.feature-list-item .feature-title::before {
+.feature-home::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -164,17 +164,29 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-.feature-list-item:nth-child(2) .feature-title::before {
-  background-image: url("../img/icon-3.svg");
-  bottom: 74px;
+.feature-food::before {
+  content: "";
+  position: absolute;
+  left: 50%;
   margin-left: -37px;
+  bottom: 74px;
+  width: 75px;
+  height: 72px;
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
-.feature-list-item:nth-child(3) .feature-title::before {
-  background-image: url("../img/icon-2.svg");
-  bottom: 75px;
+.feature-presents::before {
+  content: "";
+  position: absolute;
+  left: 50%;
   margin-left: -32px;
+  bottom: 75px;
   width: 64px;
   height: 76px;
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 .feature-list-item .feature-desc {
   width: 285px;
