@@ -281,6 +281,39 @@ input[type="radio"].visually-hidden {
 .button:active {
   background-color: #5496bd;
 }
+@keyframes bounce {
+  0% {
+    transform: translate(-284px, 200px);
+  }
+  70% {
+    transform: translate(-284px. 100px);
+  }
+  90% {
+    transform: translate(-284px, 10px);
+  }
+  100% {
+    transform: translate(-284px, 0);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(-284px);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-274px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-294px);
+  }
+}
 .search-form {
   box-sizing: border-box;
   width: 568px;
@@ -296,6 +329,14 @@ input[type="radio"].visually-hidden {
   margin: 0;
   align-items: center;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  display: none;
+}
+.form-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+.form-error {
+  animation: shake 0.6s;
 }
 .search-form label {
   color: #000000;
@@ -691,7 +732,6 @@ input[type="radio"].visually-hidden {
 .active-arrow svg {
   fill: #81b3d2;
 }
-
 .button-order {
   background-color: #766357;
   padding: 4px 17px 5px 17px;
