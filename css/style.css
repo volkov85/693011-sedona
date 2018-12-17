@@ -982,6 +982,9 @@ input[type="radio"].visually-hidden {
   display: block;
   margin: 0 auto;
 }
+.footer-map iframe {
+  border: 0;
+}
 .footer {
   background-color: #ffffff;
   margin-top: -120px;
