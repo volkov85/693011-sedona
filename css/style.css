@@ -260,12 +260,16 @@ img {
   border: none;
 }
 .show-form-button {
+  display: block;
   background-color: #766357;
   width: 568px;
+  color: #ffffff;
+  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   padding-top: 31px;
   padding-bottom: 29px;
+  margin: 0 auto;
 }
 .searching .show-form-button:hover {
   background-color: #604e43;
