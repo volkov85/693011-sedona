@@ -20,6 +20,10 @@
     isStorageSupport = false;
   }
 
+  document.addEventListener("DOMContentLoaded", function() {
+    form.classList.remove("form-show");
+  });
+
   button.addEventListener("click", function (evt) {
     evt.preventDefault();
     form.classList.toggle("form-show");
