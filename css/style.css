@@ -593,6 +593,10 @@ img {
   cursor: pointer;
   user-select: none;
 }
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  font-weight: 700;
+}
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
